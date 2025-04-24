@@ -26,6 +26,13 @@ function generateTransaction(customers: string[]) {
     amount: faker.finance.amount(),
     description: faker.commerce.product(),
     customer: faker.helpers.arrayElement(customers),
+    referenceNumber: faker.string.alphanumeric(10),
+    merchant: faker.company.name(),
+    merchantLocation: {
+      city: faker.location.city(),
+      country: faker.location.country(),
+    },
+    notes: faker.lorem.paragraph(),
   };
 }
 
@@ -56,8 +63,8 @@ function generateTransactions(count: number, customers: string[]) {
  */
 async function saveMockDataToFile() {
   try {
-    const customers = generateCustomers(5);
-    const transactions = generateTransactions(25, customers);
+    const customers = generateCustomers(200);
+    const transactions = generateTransactions(2500, customers);
     const fileName = "transactions.json";
     const __filename = fileURLToPath(import.meta.url);
     const __dirname = dirname(__filename);
