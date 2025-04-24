@@ -1,4 +1,6 @@
+.qodo
 *.log
 dist
 dist-ssr
 node_modules
+server/data/transactions.json

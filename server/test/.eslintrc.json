@@ -1,0 +1,6 @@
+{
+  "extends": "../../eslint.config.js",
+  "env": {
+    "vitest": true
+  }
+}
