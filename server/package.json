@@ -11,7 +11,7 @@
     "test:watch": "vitest",
     "test:debug": "node --inspect-brk=127.0.0.1:9229 ../node_modules/.bin/vitest run --test-timeout=60000",
     "generate-data": "tsx ./data/generate.ts",
-    "dev": "tsx watch src/index.ts",
+    "dev": "npm run generate-data && tsx watch src/index.ts",
     "dev:debug": "tsx --inspect-brk=127.0.0.1:9230 src/index.ts",
     "build": "swc src -d ../dist/server",
     "build:tsc": "tsc -b",
