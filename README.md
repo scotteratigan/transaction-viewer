@@ -13,5 +13,6 @@ Ensure you have a modern version of node. This was developed with Node 22.
 
 1. clone this repository
 2. npm install
+3. run project with npm run dev
 
-Then see specific instructions in both the client and server folders.
+There are additional details and scripts in the client and server folders.
