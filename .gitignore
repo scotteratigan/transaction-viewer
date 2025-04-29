@@ -3,4 +3,5 @@
 dist
 dist-ssr
 node_modules
+playwright-report/
 server/data/transactions.json

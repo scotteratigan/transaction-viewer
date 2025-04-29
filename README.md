@@ -12,10 +12,18 @@ There are two main components, the client code (found in the `/client` folder) a
 Ensure you have a modern version of node. This was developed with Node 22.
 
 1. clone this repository
-2. npm install
+2. npm install && npx playwright install
 3. npm run dev (runs both client and server in development mode, each can be run separately as well)
 
 Additional information can be found in the readme files in both the client and server folders.
+
+## Tests
+
+Existing tests can be run via `npm test:all` or `npm test:integration`. For debugging playwright
+tests, the Playwright VS Code extension is recommended.
+
+- [Extension download](https://marketplace.visualstudio.com/items/?itemName=ms-playwright.playwright)
+- [Instructions](https://playwright.dev/docs/debug)
 
 ## Tasks
 

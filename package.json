@@ -7,6 +7,8 @@
     "dev": "concurrently \"npm run dev --workspace client\" \"npm run dev --workspace server\"",
     "format": "prettier --write .",
     "test:all": "npm run test --workspaces --if-present",
+    "test:integration": "playwright test",
+    "show-integration-results": "open playwright-report/index.html",
     "build:all": "npm run build --workspaces --if-present"
   },
   "author": "",
@@ -16,7 +18,10 @@
     "server"
   ],
   "devDependencies": {
+    "@playwright/test": "^1.52.0",
     "concurrently": "^9.1.2",
+    "jsdom": "^26.1.0",
+    "playwright": "^1.52.0",
     "prettier": "^3.5.3",
     "vitest": "^3.1.2"
   }
