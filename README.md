@@ -28,6 +28,8 @@ Additional information can be found in the readme files in both the client and s
 
 Anything you can do to highlight your skill set is welcome. Some suggestions:
 
+- Show the number of transactions displayed
+- Fix bug with transaction filtering (filters can't be cleared)
 - Improve styling of the app
 - Create TypeScript interfaces or otherwise improve the type safety of the app
 - Add new tests on the frontend or backend or improve existing tests
