@@ -22,7 +22,6 @@ app.use(cors());
 app.use(networkSimulator);
 
 app.get("/transactions", (req, res) => {
-  // todo: send back only the fields customer, amount, and description
   const data = fs.readFileSync(transactionsPath, "utf-8");
   const transactions = JSON.parse(data);
   let selectedData: any = [];
